@@ -5,13 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
 
-	<title> Capstone 1 | Home Page </title>
+	<title> Capstone 1 | Home </title>
 
 	<!-- bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Forum|Kristi|Sacramento|Lusitana" rel="stylesheet">
 
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -23,92 +26,211 @@
 
 	<div class="container-fluid">
 		<div id="home-land" class="home-land">
-			<!-- <h1 class="text-center">Welcome Home!</h1> -->
-<!-- 
-			<div id="carousel-controls" class="carousel slide" data-ride="carousel"> -->
-			<div class="carousel-inner"> <!-- carousel items -->
-				<div class="carousel-item active">
-					<img class="d-block img-fluid w-100" src="assets/images/img.jpg">
-				</div>
-				<div class="carousel-item">
-					<img class="d-block img-fluid w-100" src="assets/images/img1.jpg">
-				</div>
-				<div class="carousel-item">
-					<img class="d-block img-fluid w-100" src="assets/images/img2.jpg">
-				</div>
+
+			<nav id="navbar" class="navbar navbar-expand-lg sticky-top bglightgray">
+				<a class="navbar-brand p" href="index.html"><i class="fas fa-spa"></i> Succa 4 You</a>
+
+				<button class="navbar-toggler bglightolive" type="button" data-toggle="collapse" data-target="#navbar-nav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- data-target = navbar-nav (items) -->
+				<div id="navbar-nav" class="collapse navbar-collapse"> <!-- holds the menu items -->
+					<ul class="navbar-nav text-center ml-auto"> <!-- right indent -->
+						<li class="nav-item">
+							<a class="nav-link active" href="home.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="gallery.html">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="testimonials.html">Testimonials</a>
+						</li>
+					</ul>
+				</div> <!-- end navbar items -->
+
+			</nav> <!-- end navbar -->
+
+			<div id="carouselSlides" class="carousel slide carousel-fade" data-ride="carousel">
+			  <div class="carousel-inner"> <!-- carousel items -->
+			    <div class="carousel-item active">
+			      <img class="d-block w-100" src="assets/images/slide2.jpg" alt="First slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="assets/images/slide1.jpg" alt="Second slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="assets/images/slide3.jpg" alt="Third slide">
+			    </div>
+			  </div>
 			</div> <!-- end of carousel inner -->
 
-			<!-- </div> end of carousel -->
-		</div>
-		
+			<div class="row homepage">
+				<q>All gardeners live in beautiful places, because they make them so... - Joseph Joubert</q> 
 
-		<nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top myprimarycolor">
-			<a class="navbar-brand" href="index.html"><i class="fas fa-baseball-ball"></i> Company Name</a>
+				<div class="homeintro col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
+					<h2 class="mb-3">A different landscape.</h2>
+					<h4 class="mb-5"><strong>Succa 4 You (S4U)</strong> is a collaborative landscape group with a passion to innovate, inspire, and integrate nature in everything we do. We have earned the reputation of being one of the market leaders in residential and commercial landscaping. We mainly specialize in <strong><a class="fontdarkblue" href="https://en.wikipedia.org/wiki/Succulent_plant" target="_blank">Succulent</a></strong> terrarium and landscaping.</h4>
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+					<h4>Learn more about us.</h4>
 
-			<!-- data-target = navbar-nav (items) -->
-			<div id="navbar-nav" class="collapse navbar-collapse"> <!-- holds the menu items -->
-				<ul class="navbar-nav ml-auto"> <!-- right indent -->
-					<li class="nav-item">
-						<a class="nav-link active" href="home.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="home.html">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="home.html">Gallery</a>
-					</li>
-				</ul>
-			</div> <!-- end navbar items -->
+					<button id="home-btn" class="btn"><a id="aboutBtn" href="about.html"> ABOUT US </a></button>
 
-		</nav> <!-- end navbar -->
+					<!-- <h4>In need of a creative, quality landscape design and maintenance? Look no further!</h4> -->
 
-		
+					<h3 class="mb-4 fontdarkblue">S4U Services Include:</h3>
 
-		<div class="container">
-				<div class="row">
-					<div class="col-12 col-md-4">
-						<div class="card">
-							<img class="card-img-top" src="assets/images/img.jpg">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="card cardserv text-white">
+							  <img class="card-img" src="assets/images/services/design.jpg" alt="Card image">
+							  <div class="card-img-overlay d-flex">
+							    <h5 class="card-title my-auto mx-auto">LANDSCAPE DESIGN</h5>
+							  </div>
+							</div>
+						</div>
 
-							<div class="card-body">
-								<h3 class="card-title">Image 1</h3>
-								<p class="card-text">Short Description about the services of the company.</p>
+						<div class="col-lg-4">
+							<div class="card cardserv text-white">
+							  <img class="card-img" src="assets/images/services/customisation.jpg" alt="Card image">
+							  <div class="card-img-overlay d-flex">
+							    <h5 class="card-title my-auto mx-auto">TERRARIUM CUSTOMISATION</h5>
+							  </div>
+							</div>
+						</div>
+
+						<div class="col-lg-4">
+							<div class="card cardserv text-white">
+							  <img class="card-img" src="assets/images/services/installation.jpg" alt="Card image">
+							  <div class="card-img-overlay d-flex">
+							    <h5 class="card-title my-auto mx-auto">LANDSCAPE INSTALLATION</h5>
+							  </div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 offset-lg-2">
+							<div class="card cardserv text-white">
+							  <img class="card-img" src="assets/images/services/maintenance.jpg" alt="Card image">
+							  <div class="card-img-overlay d-flex">
+							    <h5 class="card-title my-auto mx-auto">LANDSCAPE MAINTENANCE</h5>
+							  </div>
+							</div>
+						</div>
+
+						<div class="col-lg-4">
+							<div class="card cardserv text-white">
+							  <img class="card-img" src="assets/images/services/rental.jpg" alt="Card image">
+							  <div class="card-img-overlay d-flex">
+							    <h5 class="card-title my-auto mx-auto">PLANT RENTAL</h5>
+							  </div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-12 col-md-4">
-						<div class="card">
-							<img class="card-img-top" src="assets/images/img1.jpg">
+					<button id="home-btn" class="btn"><a id="bookusBtn" href="contact.html"> BOOK US </a></button>
 
-							<div class="card-body">
-								<h3 class="card-title">Image 2</h3>
-								<p class="card-text">Short Description about the services of the company.</p>
-							</div>
-						</div>
+				</div> <!-- end of home intro -->
+			</div> <!-- end of row homepage -->
+
+			<div class="container-fluid intro">
+
+				<div class="row row1 d-flex">
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<h3> What Are Succulents? </h3>
+						<p>Though most of us refer to them by the common term, “desert plants,” the term “succulents” has grown in popularity. In horticulture, succulents are known as water storage plants. These plants store water in their thick, fleshy leaves. But that may be all that succulents have in common, seeing as how they come in a seemingly endless array of shapes, sizes, and colors.</p>
 					</div>
-
-					<div class="col-12 col-md-4">
-						<div class="card">
-							<img class="card-img-top" src="assets/images/img2.jpg">
-
-							<div class="card-body">
-								<h3 class="card-title">Image 3</h3>
-								<p class="card-text">Short Description about the services of the company.</p>
-							</div>
-						</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<h3> But Why Choose Succulents instead of regular "Pretty Flowers"? </h3>
+						<a href="#introfirstimg"><i class="fas fa-arrow-down"></i></a>
 					</div>
 				</div>
+					
+			</div> <!-- end of intro -->
 
-		</div> <!-- end of CARD container fluid -->
+			<div id="intro1" class="container-fluid intro1">
+				
+				<div class="row col-lg-12 col-md-12 col-12">
+					<div class="intro1-start col-lg-6 col-md-6 col-12">
+						<img id="introfirstimg" class="intro1-img animated zoomIn" src="assets/images/intro1-img1.jpg">
+					</div>
+					<div class="intro1-start col-lg-6 col-md-6 col-12 col-lg-6 col-md-6 col-12">
+						<h4>Firstly,</h4>
+						<p><strong>Succulents can survive your BLACK thumb</strong> (if you do have). Because they are low maintenance.</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-12">
+						<h4>Secondly,</h4>
+						<p><strong>They are sculptural and graphic,</strong> which makes them work so well in mid-century modern and industrial-style settings. It's no surprise we associate them with this type of architecture since West Coast modern houses boast these indigenous, desert-like landscapes.</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-12">
+						<img class="intro1-img animated zoomIn" src="assets/images/intro1-img2.jpg">
+					</div>
+					<div class="col-lg-6 col-md-6 col-12">
+						<img class="intro1-img animated zoomIn" src="assets/images/intro1-img3.jpg">
+					</div>
+					<div class="col-lg-6 col-md-6 col-12">
+						<h4>Thirdly,</h4>
+						<p><strong>They look cool in concrete planters.</strong> And we love concrete! Especially how it lends itself to clean geometry.</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-12">
+						<h4>Lastly,</h4>
+						<p><strong>They look like they are from an alien planet and that is just plain cool. </strong> Nature never disappoints. </p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-12">
+						<img class="intro1-img animated zoomIn" src="assets/images/intro1-img4.jpg">
+					</div>
 
+				</div> 
+
+				<div id="intro2" class="container-fluid intro2">
+
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<h3>Let's Design with Nature Together.</h3>
+						</div>
+					</div>
+					<div class="row">
+							<div class="card col-lg-4 col-md-4 col-12">
+								<img class="card-img" src="assets/images/works/2016-4.jpg" alt="Image 1">
+							</div>
+							<div class="card col-lg-4 col-md-4 col-12">
+								<img class="card-img" src="assets/images/works/2018-5.jpg" alt="Image 2">
+							</div>
+							<div class="card col-lg-4 col-md-4 col-12">
+								<img class="card-img" src="assets/images/works/2018-1.jpg" alt="Image 3">
+							</div>
+					</div>	
+
+					<h4>See some of our works.</h4>
+					<button id="home-btn" class="btn"><a id="galleryBtn" href="gallery.html"> Go to Gallery </a></button>
+
+					<button class="backtotop">
+						<a href="#navbar"><i class="fas fa-angle-up"></i></a>
+						<h6>TOP</h6>
+					</button>
+
+					<footer id="footersection" class="footer bglightgray text-center">
+						<div class="contact">
+							<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fontdarkolive"></i></a>
+							<a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram fontdarkolive"></i></a>
+							<a href="https://github.com/" target="_blank"><i class="fab fa-github fontdarkolive"> </i></a>
+							<a href="https://gitlab.com/" target="_blank"><i class="fab fa-gitlab fontdarkolive"> </i></a>
+							<a href="https://mail.google.com/" target="_blank"><i class="fab fa-github-square fontdarkolive"> </i></a>
+						</div>
+						<div class="copyright">
+							 <small>Copyright &copy; 2018 by Abigail Piscasio</small>
+						</div>
+					</footer> <!-- end of footer -->
+
+				</div>
+			</div><!-- end of intro1 container -->
+		</div> <!-- end of inner container -->		
+	</div>	
 
 
 
