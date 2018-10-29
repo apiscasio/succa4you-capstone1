@@ -5,10 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
 
-	<title> Capstone 1 | Contact Us </title>
+	<title> Succa 4 You | Contact Us </title>
+
+	<link rel="shortcut icon" type="text/css" href="assets/images/logo1.png">
 
 	<!-- bootstrap css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+	<!-- jquery first then popper then bootstrap js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -116,23 +123,23 @@
 							<form id="form" class="col-lg-10 offset-lg-1">
 								
 								<div class="form-group">
-									<label for="username"></label>
-									<input id="username" class="form-control" type="text" name="username" placeholder="Username:">
+									<!-- <label for="username"></label> -->
+									<input id="username" class="form-control mb-3 mt-3" type="text" name="username" placeholder="Username:">
 								</div>
 
 								<div class="form-group">
-									<label for="email"></label>
-									<input id="email" class="form-control has-success" type="text" name="email" placeholder="*Email:">
+									<!-- <label for="email"></label> -->
+									<input id="email" class="form-control has-success mb-3" type="text" name="email" placeholder="*Email:" required>
 								</div>
 
 								<div class="form-group">
-									<label for="subject"></label>
-									<input id="subject" class="form-control" type="text" name="contact" placeholder="*Subject:">
+									<!-- <label for="subject"></label> -->
+									<input id="subject" class="form-control mb-3" type="text" name="contact" placeholder="*Subject:" required>
 								</div>
 
 								<div class="form-group">
-									<label for="sel1"></label>
-									<select class="form-control" id="sel1" placeholder="Select Enquiry Type">
+									<!-- <label for="sel1"></label> -->
+									<select class="form-control mb-3" id="sel1" placeholder="Select Enquiry Type">
 										<option selected>Select Enquiry Type</option>
 										<option>General Enquiry</option>
 									    <option>Consultation</option>
@@ -141,23 +148,23 @@
 								</div>
 
 								<div class="form-group">
-									<label for="message"></label>
-									<textarea id="message" class="form-control" rows="5" placeholder="*Message:"></textarea>
+									<!-- <label for="message"></label> -->
+									<textarea id="message" class="form-control" rows="5" placeholder="*Message:" required></textarea>
 								</div>
 
 								<label>*<small> Required Fields</small></label>		
+								<div class="contact-submit">
+									<button class="btn mr-auto">Submit <i class="fab fa-telegram-plane"></i></button>
+								</div>
 
 							</form>
-							<div class="contact-submit">
-								<button class="btn">Submit <i class="fab fa-telegram-plane"></i></button>
-							</div>
 
-						</div> <!-- end of form -->	
+						</div> <!-- end of right form -->	
 
 					</div> <!-- end of right column -->
 
 					<button class="backtotop">
-						<a href="#navbar"><i class="fas fa-angle-up"></i></a>
+						<a href="#contactheader"><i class="fas fa-angle-up"></i></a>
 						<h6>TOP</h6>
 					</button>
 
@@ -182,15 +189,5 @@
 
 	</div> <!-- end of container fluid -->
 
-
-<!-- jquery first then popper then bootstrap js -->
-<!-- jquery -->
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-
-<!-- popper -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
-<!-- external bootstrap js -->
-<script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>

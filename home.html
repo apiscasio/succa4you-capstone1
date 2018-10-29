@@ -5,10 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
 
-	<title> Capstone 1 | Home </title>
+	<title> Succa 4 You | Home </title>
+
+	<link rel="shortcut icon" type="text/css" href="assets/images/logo1.png">
 
 	<!-- bootstrap css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+	<!-- jquery first then popper then bootstrap js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -57,7 +64,7 @@
 
 			</nav> <!-- end navbar -->
 
-			<div id="carouselSlides" class="carousel slide carousel-fade" data-ride="carousel">
+			<div id="carouselSlides" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
 			  <div class="carousel-inner"> <!-- carousel items -->
 			    <div class="carousel-item active">
 			      <img class="d-block w-100" src="assets/images/slide2.jpg" alt="First slide">
@@ -76,7 +83,7 @@
 
 				<div class="homeintro col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
 					<h2 class="mb-3">A different landscape.</h2>
-					<h4 class="mb-5"><strong>Succa 4 You (S4U)</strong> is a collaborative landscape group with a passion to innovate, inspire, and integrate nature in everything we do. We have earned the reputation of being one of the market leaders in residential and commercial landscaping. We mainly specialize in <strong><a class="fontdarkblue" href="https://en.wikipedia.org/wiki/Succulent_plant" target="_blank">Succulent</a></strong> terrarium and landscaping.</h4>
+					<h4 class="mb-5"><strong>Succa 4 You (S4U)</strong> is a collaborative landscape group with a passion to innovate, inspire, and integrate nature in everything. We have earned the reputation of being one of the market leaders in residential and commercial landscaping and we mainly specialize in <strong><a class="fontdarkblue" href="https://en.wikipedia.org/wiki/Succulent_plant" target="_blank">Succulent</a></strong> terrarium and landscaping.</h4>
 
 					<h4>Learn more about us.</h4>
 
@@ -100,7 +107,7 @@
 							<div class="card cardserv text-white">
 							  <img class="card-img" src="assets/images/services/customisation.jpg" alt="Card image">
 							  <div class="card-img-overlay d-flex">
-							    <h5 class="card-title my-auto mx-auto">TERRARIUM CUSTOMISATION</h5>
+							    <h5 class="card-title my-auto mx-auto">TERRARIUM CUSTOMIZATION</h5>
 							  </div>
 							</div>
 						</div>
@@ -138,16 +145,23 @@
 				</div> <!-- end of home intro -->
 			</div> <!-- end of row homepage -->
 
+			<div id="jumbobg" class="jumbotron jumbotron-fluid">
+			  <div class="container">
+			    <!-- <h1 class="display-4">Fluid jumbotron</h1>
+			    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
+			  </div>
+			</div>
+
 			<div class="container-fluid intro">
 
 				<div class="row row1 d-flex">
-					<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="col-lg-6 col-md-6 col-sm-12 mt-5">
 						<h3> What Are Succulents? </h3>
 						<p>Though most of us refer to them by the common term, “desert plants,” the term “succulents” has grown in popularity. In horticulture, succulents are known as water storage plants. These plants store water in their thick, fleshy leaves. But that may be all that succulents have in common, seeing as how they come in a seemingly endless array of shapes, sizes, and colors.</p>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12">
-						<h3> But Why Choose Succulents instead of regular "Pretty Flowers"? </h3>
-						<a href="#introfirstimg"><i class="fas fa-arrow-down"></i></a>
+					<div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+						<h3> But Why Choose Succulents instead of regular "Pretty Flowers"?</h3>
+						<a href="#introfirstimg" class="fas fa-arrow-down"></a>
 					</div>
 				</div>
 					
@@ -157,32 +171,32 @@
 				
 				<div class="row col-lg-12 col-md-12 col-12">
 					<div class="intro1-start col-lg-6 col-md-6 col-12">
-						<img id="introfirstimg" class="intro1-img animated zoomIn" src="assets/images/intro1-img1.jpg">
+						<img id="introfirstimg" name="introfirstimg" class="intro1-img animated zoomIn" src="assets/images/intro1-img1.jpg">
 					</div>
-					<div class="intro1-start col-lg-6 col-md-6 col-12 col-lg-6 col-md-6 col-12">
+					<div class="intro1-start vertical-center col-lg-6 col-md-6 col-12 col-lg-6 col-md-6 col-12">
 						<h4>Firstly,</h4>
-						<p><strong>Succulents can survive your BLACK thumb</strong> (if you do have). Because they are low maintenance.</p>
+						<p><strong>Succulents can survive your BLACK thumb</strong> (if you do have). Because they are drought-resistant, you can water them even just once a week. They are low maintenance!</p>
 					</div>
-					<div class="col-lg-6 col-md-6 col-12">
+					<div class="vertical-center col-lg-6 col-md-6 col-12">
 						<h4>Secondly,</h4>
 						<p><strong>They are sculptural and graphic,</strong> which makes them work so well in mid-century modern and industrial-style settings. It's no surprise we associate them with this type of architecture since West Coast modern houses boast these indigenous, desert-like landscapes.</p>
 					</div>
 					<div class="col-lg-6 col-md-6 col-12">
-						<img class="intro1-img animated zoomIn" src="assets/images/intro1-img2.jpg">
+						<img id="intro1-img-2nd" class="intro1-img animated zoomIn" src="assets/images/intro1-img2.jpg">
 					</div>
 					<div class="col-lg-6 col-md-6 col-12">
 						<img class="intro1-img animated zoomIn" src="assets/images/intro1-img3.jpg">
 					</div>
-					<div class="col-lg-6 col-md-6 col-12">
+					<div class="vertical-center col-lg-6 col-md-6 col-12">
 						<h4>Thirdly,</h4>
 						<p><strong>They look cool in concrete planters.</strong> And we love concrete! Especially how it lends itself to clean geometry.</p>
 					</div>
-					<div class="col-lg-6 col-md-6 col-12">
+					<div class="vertical-center col-lg-6 col-md-6 col-12">
 						<h4>Lastly,</h4>
-						<p><strong>They look like they are from an alien planet and that is just plain cool. </strong> Nature never disappoints. </p>
+						<p><strong>They look like they are from an alien planet and that is just plain cool. </strong> Nature never really disappoints. </p>
 					</div>
 					<div class="col-lg-6 col-md-6 col-12">
-						<img class="intro1-img animated zoomIn" src="assets/images/intro1-img4.jpg">
+						<img id="intro1-img-3rd" class="intro1-img animated zoomIn" src="assets/images/intro1-img4.jpg">
 					</div>
 
 				</div> 
@@ -190,7 +204,7 @@
 				<div id="intro2" class="container-fluid intro2">
 
 					<div class="row">
-						<div class="col-lg-12 col-md-12 col-12">
+						<div class="col-lg-12 col-md-12 col-12 mb-5">
 							<h3>Let's Design with Nature Together.</h3>
 						</div>
 					</div>
@@ -199,10 +213,10 @@
 								<img class="card-img" src="assets/images/works/2016-4.jpg" alt="Image 1">
 							</div>
 							<div class="card col-lg-4 col-md-4 col-12">
-								<img class="card-img" src="assets/images/works/2018-5.jpg" alt="Image 2">
+								<img class="card-img" src="assets/images/works/2016-1.jpg" alt="Image 2">
 							</div>
 							<div class="card col-lg-4 col-md-4 col-12">
-								<img class="card-img" src="assets/images/works/2018-1.jpg" alt="Image 3">
+								<img class="card-img" src="assets/images/works/2018-5.jpg" alt="Image 3">
 							</div>
 					</div>	
 
@@ -210,7 +224,7 @@
 					<button id="home-btn" class="btn"><a id="galleryBtn" href="gallery.html"> Go to Gallery </a></button>
 
 					<button class="backtotop">
-						<a href="#navbar"><i class="fas fa-angle-up"></i></a>
+						<a href="#home-land"><i class="fas fa-angle-up"></i></a>
 						<h6>TOP</h6>
 					</button>
 
@@ -232,16 +246,5 @@
 		</div> <!-- end of inner container -->		
 	</div>	
 
-
-
-<!-- jquery first then popper then bootstrap js -->
-<!-- jquery -->
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-
-<!-- popper -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
-<!-- external bootstrap js -->
-<script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
