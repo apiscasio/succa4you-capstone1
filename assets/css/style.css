@@ -13,109 +13,141 @@ html {
 	height: 100vh;
 }
 
-.jumbotron hr {
-	background-color: #fff;
-}
-
 #jumbo-land {
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	margin: 0 auto;
-	padding-top: 15%;
 	border-radius: 0; /*bec jumbotron is rounded*/
-	background-image: url(../images/bg.jpg);
+	background-image: url(../images/bg10.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	text-align: center;
+	position: relative;
 }
 
-#h1font {
-	padding: 15px 0 15px 0;
-	color: #fff;
+#logo1 {
 	font-family: 'Sacramento', cursive;
+	font-size: 6.5em;
+	font-weight: bolder;
+	color: #fffbf1;
+	text-shadow: 5px 5px #333;
+	text-decoration: none;
+	letter-spacing: -3px;
+	margin: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 888;
+}
+
+/*------------------------------------------ start tipsy -----------------------------------------------*/
+
+#logo1:before,
+#logo1:after {
+  content: '';
+  padding: .9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display: block;
+  border: 15px solid green;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+#logo1:before {
+  border-color: #b5b173 #b5b173 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+#logo1:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #b5b173 #b5b173;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+
+@keyframes tipsy {
+  0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+/*------------------------------------------ end tipsy -----------------------------------------------*/
+
+.jumbotron #p-text {
+	background-color: rgba(255,255,255, 0.8);
+	padding: 30px 40px 30PX 40px;
+	width: 38%;
+	color: #333;
+	letter-spacing: 5px;
+	font-weight: bolder;
+	z-index: 889;
+	position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-100%, 50%);
+}
+
+#logo-fab {
+	font-family: 'Sacramento', cursive;
+	color: #7d8b5a;
 	font-size: 7em;
 	font-weight: bolder;
-	text-shadow: 5px 5px #333;
-/*	-webkit-text-stroke: 1px #333;*/
+	text-shadow: 5px 5px #fff;	
+    z-index: 890;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(50%, -41%);
 }
 
-#h1font:hover {
-	color: #333;
-	text-shadow: 5px 5px #fff;
-}
-
-#logoh1 a {
-	font-family: 'Sacramento', cursive;
-	color: #fff;
-	font-size: 6em;
-	font-weight: bolder;
-	text-shadow: 5px 5px #333;
-}
-
-#logoh1 a:hover {
+#logo-fab:hover {
 	/*color: #b5b173;*/
-	color: #333;
+	color: #98ada4;
 	text-shadow: 5px 5px #fff;
 }
 
-a:hover {
-	color: #5b6762;
-	text-decoration: underline;
+@media only screen and (max-width: 400px) {
+
+	#logo1 {
+		font-size: 5em;
+	}
+
+	.jumbotron #p-text {
+		font-size: 2em;
+		transform: translate(-100%, 10%);
+	}
+
+	.jumbotron #logo-fab {
+		font-size: 2em;
+	}
+
 }
 
-.jumbotron p {
-	background-color: rgba(255,255,255, 0.9);
-	margin-top: 220px;
-	padding: 10px 0 10px 0;
-	width: 70%;
-	color: #7d8b5a;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -100%);
-	position: absolute;
-	letter-spacing: 5px;
-	font-weight: bolder;
-	border-radius: 10px;
+
+/*tablet styles*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+	#logo1 {
+		font-size: 5em;
+	}
+
+	.jumbotron #p-text {
+		font-size: 3em;
+		transform: translate(-100%, 10%);
+	}
+
+	.jumbotron #logo-fab {
+		font-size: 2em;
+	}
 }
 
-#indextohome a {
-	text-decoration: none;
-	color: #fff;
-	font-weight: bolder;
-	letter-spacing: 2px;
-}
-
-#indextohome {
-	background-color: #98ada4;
-	color: white;
-	border-top: 3px solid #fafaf6;
-	border-left: 3px solid #fafaf6;
-	border-bottom: 1px solid gray;
-	border-right: 1px solid gray;
-	padding: 10px 30px 10px 30px;
-	border-radius: 20px;
-	position: absolute;
-	top: 80%;
-	left: 50%;
-	transform: translate(-50%, 0);
-}
-
-#indextohome:hover {
-	background-color: #5b6762;
-	color: white;
-	border-top: 3px solid #fafaf6;
-	border-left: 3px solid #fafaf6;
-	border-bottom: 1px solid gray;
-	border-right: 1px solid gray;
-	padding: 10px 30px 10px 30px;
-	border-radius: 20px;
-}
-
-#indextohome a {
-	letter-spacing: 5px;
-	font-weight: bold;
-}
 
 
 /*end of landing page*/
@@ -180,7 +212,7 @@ a:hover {
 }
 
 .home-land {
-	width: 85% !important;
+	width: 90% !important;
 	margin: 0 auto;
 }
 
@@ -194,8 +226,8 @@ a:hover {
 @media only screen and (max-width: 400px) {
 
 	#carouselSlides .carousel-inner img {
-		max-height: 300px;
-	}	
+		height: 295px !important;
+	}
 }
 
 
@@ -215,6 +247,9 @@ a:hover {
 	font-weight: 700;
 } /*navbar-brand*/
 
+.navbar-brand:hover {
+	color: #5b6762;
+}
 
 .nav-link {
 	letter-spacing: 2px;
@@ -222,6 +257,10 @@ a:hover {
 	font-size: 20px;
 	text-transform: uppercase;
 } /*navbar menu*/
+
+.nav-link:hover {
+	color: #5b6762;
+}
 
 #navbar-nav .active {
 	font-weight: bold;
@@ -362,6 +401,11 @@ a:hover {
 	text-decoration-line: none;
 }
 
+.intro p,
+.intro1 p {
+	font-size: 20px;
+}
+
 .intro1 {
 	text-align: center;
 }
@@ -372,8 +416,8 @@ a:hover {
 }
 
 .intro1-img {
-	width: 80%;
-	height: 400px;
+	width: 90%;
+	height: 430px;
 }
 
 .intro1-start {
@@ -462,7 +506,7 @@ a:hover {
 }
 
 #disclaimer {
-	width: 80%;
+	width: 90%;
 	text-align: left;
 }
 
@@ -489,7 +533,7 @@ a:hover {
 }
 
 .about-land {
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
 	font-family: 'Kristi' cursive;
 }
@@ -504,7 +548,7 @@ a:hover {
 } /*navbar-brand*/
 
 #aboutSlides .carousel-inner img {
-	height: 400px;
+	height: 450px;
 	width: 100%;
 }
 
@@ -559,9 +603,11 @@ a:hover {
 	}
 	#mvsection {
 		margin-top: 90px;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
 	.team1 .card-img-top {
-		width: 85%;
+		width: 100%;
 		align-items: center;
 	}
 }
@@ -573,11 +619,12 @@ a:hover {
 }
 
 .teamsection {
-	background-image: url(../images/bg5.jpg);
+	background-image: url(../images/bg17.jpg);
 	height: 200px;
 	background-position: bottom;
 	background-size: cover;
 	background-attachment: fixed;
+	margin: 0 auto;
 }
 
 #aboutheader {
@@ -587,6 +634,13 @@ a:hover {
 	margin-bottom: 60px;
 	text-shadow: 2px 2px 5px #333;
 	/*text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;*/
+}
+
+@media only screen and (max-width: 400px) {
+	#aboutheader {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
 
 .team1 .card {
@@ -602,7 +656,8 @@ a:hover {
 }
 
 .team1 .card-img-top {
-	max-height: 200px;
+	height: 250px;
+	max-height: 250px;
 }
 
 
@@ -611,7 +666,7 @@ a:hover {
 /*-----------------------start of contact page-------------------------*/
 .contact-land {
 	height: 100vh;
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -620,7 +675,7 @@ a:hover {
 	width: 99%;
 	height: 200px;
 	margin: 0 auto;
-	background-image: url(../images/bg8.png);
+	background-image: url(../images/bg8.jpg);
 	background-position: bottom;
 	background-size: cover;
 	background-attachment: fixed;
@@ -716,7 +771,7 @@ a:hover {
 
 .contact-details > small {
 	font-size: 16px;
-	width: 80%;
+	width: 90%;
 	text-align: center;
 }
 
@@ -767,7 +822,8 @@ a:hover {
 	width: 99%;
 	height: 200px;
 	margin: 0 auto;	
-	background-image: url(../images/bg9.jpg);
+	background-image: url(../images/bg9.png);
+	background-position: bottom;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -820,6 +876,11 @@ a:hover {
 	letter-spacing: 0.5em;
 }
 
+.breadcrumb {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .breadcrumb-item > a {
 	color: #5b6762;
 }
@@ -840,6 +901,7 @@ a:hover {
  margin: 0 auto;
  max-width: 720px;
  max-height: 960px;
+
 }
 
 .gallery-items .card-img-top {
@@ -861,7 +923,7 @@ a:hover {
 
 .modal-content {
 	border-radius: 10px;
-	background-color: #eae6d2; 
+	background-color: #eae6d2;
 }
 
 .modal-content .btn {
@@ -880,6 +942,65 @@ a:hover {
 	border-left: 2px solid #fafaf6;
 	padding: 10px 30px 10px 30px;
 	border-radius: 20px;
+}
+
+#testimonial-container {
+	width: 100%;
+	height: 600px;
+	background-color: #b5b173;
+	margin: 0 auto;
+	margin: 0;
+	padding: 0;
+	border-radius: 10px;
+	z-index: 200;
+}
+
+#h2testimonial {
+	font-size: 24px;
+	background-color: #fafaf6;
+	margin-top: 40px;
+}
+
+#testimonial-container .carousel-item {
+	width: 100%;
+	margin: auto;
+}
+
+@media only screen and (max-width: 400px) {
+	#testimonial-container {
+		height: 600px;
+	}
+
+	.modal-content {
+		max-width: 338px;	
+	}
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	.card-img-top {
+		width: 100%;
+		max-height: 120px;
+	}
+
+	#testimonial-container {
+		height: 850px;
+	}
+
+	#testimonial-container .card-text {
+		font-size: 12px;
+	}
+}
+
+#testimonial-container .card-text {
+	width: 90%;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#testimonial-container .card {
+	background-color: transparent;
+	border: none;
 }
 
 
@@ -919,6 +1040,13 @@ a:hover {
 	font-size: 20px;
 }
 
+
+
+
+/*body {
+  font-family: helvetica, arial, sans-serif;
+  background-color: #2e2e31;
+}*/
 
 /*mobile styles*/
 @media only screen and (max-width: 400px) {
@@ -974,7 +1102,7 @@ a:hover {
 	}
 
 	.navbar-brand {
-		font-size: 24px;
+		font-size: 26px;
 		letter-spacing: 0;
 	}
 
@@ -993,9 +1121,15 @@ a:hover {
 		margin-bottom: 30px;
 	}
 
+	#jumbobg {
+		background-position: bottom;
+	}
+
 	.intro1 {
 		width: 100% !important;
 		margin: 0 auto;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.intro1 > .row {
@@ -1073,6 +1207,11 @@ a:hover {
 		background-attachment: fixed;
 	}
 
+	.left-contact {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	.right-contact {
 		width: 100%;
 		text-align: center;
@@ -1098,15 +1237,6 @@ a:hover {
 /*tablet styles*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 
-	#logoh1 {
-		transform: translate(0%, 75%);
-		/*position: absolute;*/
-	}
-
-	.jumbotron p {
-		margin-top: 250px;
-	}
-
 	#navbar {
 		padding-top: 30px;
 	}
@@ -1115,6 +1245,10 @@ a:hover {
 		letter-spacing: 2px;
 		font-size: 18px;
 	} /*navbar menu*/
+
+	#jumbobg {
+		background-position: bottom;
+	}
 
 /*home page*/
 	.intro1-start {
