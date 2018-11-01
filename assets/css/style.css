@@ -121,14 +121,14 @@ html {
 
 	.jumbotron #p-text {
 		font-size: 2em;
-		transform: translate(-60%, 90%);
+		transform: translate(-48%, 90%);
 	    padding-left: 20px;
-	    width: 70%;
+	    width: 72%;
 	}
 
 	.jumbotron #logo-fab {
 	    font-size: 2em;
-	    transform: translate(99%, -40%);
+	    transform: translate(100%, -40%);
 	}
 
 }
@@ -150,6 +150,53 @@ html {
 	.jumbotron #logo-fab {
 		font-size: 2em;
 		transform: translate(135%, -40%);
+	}
+
+	.intro1 {
+		width: 100%;
+		align-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.intro1 .row {
+		/*margin-left: 5px;*/
+		padding-right: 0px;
+		padding-left: 0;
+	}
+}
+
+@media only screen and (min-width: 414px) and (max-width: 736px) {
+
+	#logo1 {
+		font-size: 5em;
+	}
+
+	.jumbotron #p-text {
+		font-size: 3em;
+		width: 65%;
+		padding-left: 20px;
+		transform: translate(-55%, 100%);
+	}
+
+	.intro1 {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.jumbotron #logo-fab {
+		font-size: 2em;
+		transform: translate(58%, -40%);
+	}
+
+	.intro1 .row {
+		margin-right: 0 !important;
+	}
+
+	#intro1 img {
+		padding: 0;
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -234,7 +281,6 @@ html {
 		height: 295px !important;
 	}
 }
-
 
 #carouselSlides {
 	width: 99%;
@@ -555,7 +601,7 @@ html {
 	background-color: transparent;
 }
 
-.about-land {
+#about-land {
 	width: 90%;
 	margin: 0 auto;
 	font-family: 'Kristi' cursive;
@@ -564,6 +610,7 @@ html {
 .about-section {
 	width: 99%;
 	height: 200px;
+	margin: 0;
 }
 
 #about-land .navbar-brand {
@@ -624,11 +671,17 @@ html {
 	.est > h6 {
 		margin-top: 50px;
 	}
+
 	#mvsection {
 		margin-top: 90px;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
+
+	#mvsection h2 {
+		font-size: 26px;
+	}
+
 	.team1 .card-img-top {
 		width: 100%;
 		align-items: center;
@@ -661,7 +714,7 @@ html {
 
 @media only screen and (max-width: 400px) {
 	#aboutheader {
-		margin-top: 0;
+		margin: 0 !important;
 		margin-bottom: 0;
 	}
 }
@@ -877,6 +930,11 @@ html {
 
 	.modal-container h4 {
 		margin-top: 0;
+		font-size: 24px;
+	}
+
+	.breadcrumb a {
+		font-size: 20px;
 	}
 }
 
@@ -946,6 +1004,15 @@ html {
 	.card-img-top {
 		width: 100%;
 		max-height: 120px;
+	}
+
+	.modal-container h4 {
+		margin-top: 0;
+		font-size: 26px;
+	}
+
+	.breadcrumb a {
+		font-size: 20px;
 	}
 }
 
@@ -1126,7 +1193,8 @@ html {
 	}
 
 	#navbar {
-		padding-top: 30px;
+		/*padding-top: 30px;*/
+		padding: 30px 0 0 0;
 	}
 
 	.navbar-brand {
@@ -1153,6 +1221,14 @@ html {
 		background-position: bottom;
 	}
 
+	.homeintro h2 {
+		font-size: 28px;
+	}
+
+	.homeintro h4 {
+		font-size: 22px;
+	}
+
 	.intro1 {
 		width: 100% !important;
 		margin: 0 auto;
@@ -1163,6 +1239,7 @@ html {
 	.intro1 > .row {
 		width: 100%;
 		padding: 0;
+		margin: 0 !important;
 		margin: 0 auto;
 	}
 
@@ -1224,6 +1301,7 @@ html {
 	.about-section {
 		width: 100%;
 		margin: 0 auto;
+		text-align: center;
 	}
 
 	.about-land {
@@ -1278,6 +1356,10 @@ html {
 		padding-top: 30px;
 	}
 
+	.navbar-brand {
+		font-size: 24px;
+	}
+
 	.nav-link {
 		letter-spacing: 2px;
 		font-size: 18px;
@@ -1299,6 +1381,7 @@ html {
 	.contact {
 		font-size: 32px;
 		text-align: center;
+		margin-top: 20px;
 	}
 
 /*contact page*/
@@ -1316,6 +1399,10 @@ html {
 	.contact-submit {
 		width: 100%;
 		text-align: center;
+	}
+	
+	#disclaimer button {
+		margin-top: 20px;
 	}
 
 	#footersection small {
