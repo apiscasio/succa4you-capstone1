@@ -200,6 +200,52 @@ html {
 	}
 }
 
+@media only screen and (width: 1024px) and (height: 1366px) {
+
+	.jumbotron #p-text {
+		width: 45%;
+		transform: translate(-50%, 225%);
+	}
+
+	.jumbotron #logo-fab {
+		transform: translate(113%, -40%);
+	}
+
+	.homepage > q {
+		font-size: 24px !important;
+	   	margin: 10px 30px 7vh 30px !important;
+	}
+
+	#jumbobg {
+		background-position: bottom;
+		background-attachment: fixed;
+	}
+
+	.teamsection {
+		background-position: center !important;
+		background-size: contain;
+	}
+
+	.contactpage {
+		background-position: top !important;
+		background-size: contain !important;
+	}
+
+	.contact-details > small {
+		font-size: 14px !important;
+	}
+
+	.right-contact button {
+		margin-bottom: 30px;
+	}
+
+	#testimonial-container {
+		height: 900px !important;
+	}
+
+
+}
+
 
 
 /*end of landing page*/
@@ -322,6 +368,7 @@ html {
 	font-family: 'Lusitana', serif;
 	text-align: right !important;
 	margin: 10px 30px 20vh 30px;
+	text-align: right;
 }
 
 .cardserv {
@@ -1208,7 +1255,8 @@ html {
 	} /*navbar menu*/
 
 	.homepage > q {
-		font-size: 22px;
+		font-size: 20px;
+		margin-bottom: 60px;
 	}
 
 /*home page*/
@@ -1376,6 +1424,11 @@ html {
 
 	.team1 .card-img-top {
 		max-height: 124px;
+	}
+
+	.homepage > q {
+		font-size: 22px;
+		margin-bottom: 60px;
 	}
 
 	.contact {
