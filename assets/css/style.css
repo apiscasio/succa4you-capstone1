@@ -213,7 +213,7 @@ html {
 
 	.homepage > q {
 		font-size: 24px !important;
-	   	margin: 10px 30px 7vh 30px !important;
+	   	margin: 10px 30px 7vh 30px !important !important;
 	}
 
 	#jumbobg {
