@@ -462,6 +462,7 @@ html {
 .backtotop {
 	background-color: transparent !important;
 	color: #333 !important;
+	z-index: 777;
 }
 
 #bookusBtn {
