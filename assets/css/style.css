@@ -104,7 +104,7 @@ html {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(170%, -40%);
+    transform: translate(150%, -40%);
 }
 
 #logo-fab:hover {
